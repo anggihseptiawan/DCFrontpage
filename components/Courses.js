@@ -4,7 +4,7 @@ import CourseItem from "./CourseItem";
 
 const Courses = ({ courses }) => {
 	return (
-		<div className="my-10">
+		<div>
 			<div className="flex justify-between items-center mb-6">
 				<div className="w-auto">
 					<h2 className="text-lg text-gray-600 mb-0">New Clases</h2>

@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Clients from "../components/Clients";
 import Courses from "../components/Courses";
 import instance from "../config/axios";
+import ListCategory from "../components/ListCategory";
 
 export default function Home({ data }) {
 	console.log(data);
@@ -24,7 +25,12 @@ export default function Home({ data }) {
 			<main>
 				<section className="container mx-auto pt-24">
 					<Clients />
+				</section>
+				<section className="container mx-auto pt-24">
 					<Courses courses={data} />
+				</section>
+				<section className="category container mx-auto pt-24">
+					<ListCategory categories={data} />
 				</section>
 			</main>
 		</>

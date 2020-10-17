@@ -16,6 +16,7 @@ const CourseItem = ({ course }) => {
 			    <p className="text-lg text-gray-900">{course?.name ?? "Course name" }</p>
 			    <p className="text-sm text-gray-600">{course?.level ?? "Course level" }</p>
             </div>
+			<Link href="/course/[slug]" as={`/course/${course.id}`}><a className="link-wrapped"></a></Link>
 		</div>
 	);
 };
