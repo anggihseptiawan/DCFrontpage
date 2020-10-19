@@ -5,9 +5,9 @@ import Clients from "../components/Clients";
 import Courses from "../components/Courses";
 import instance from "../config/axios";
 import ListCategory from "../components/ListCategory";
+import Footer from "../components/Footer";
 
 export default function Home({ data }) {
-	console.log(data);
 	return (
 		<>
 			<Head>
@@ -33,6 +33,9 @@ export default function Home({ data }) {
 					<ListCategory categories={data} />
 				</section>
 			</main>
+			<section className="footer bg-indigo-900 mt-24">
+				<Footer />
+			</section>
 		</>
 	);
 }
